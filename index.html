@@ -4,11 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Height Calculator</title>
 </head>
 
 <body>
-
+    <img src="./example.png" alt="An example" id="example-img">
+    <div class="qcontainer">
+        <div id="boxes">
+            <div>
+                <label for="theta1"><code>θ<sub>1</sub></code>=</label>
+                <input type="number" id="theta1"
+                    onchange="ang_1 = document.getElementById('theta1').value; update_ans()">
+            </div>
+            <div>
+                <label for="theta2"><code>θ<sub>2</sub></code>=</label>
+                <input type="number" id="theta2"
+                    onchange="ang_2 = document.getElementById('theta2').value; update_ans()">
+            </div>
+            <div>
+                <label for="d"><code>&puncsp;d</code>=</label>
+                <input type="number" id="d" onchange="dist = document.getElementById('d').value; update_ans()">
+            </div>
+        </div>
+        <h1><mark>h = <span id="ans"></span></mark></h1>
+    </div>
+    <script src="./calculator.js"></script>
 </body>
 
 </html>

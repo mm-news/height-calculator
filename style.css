@@ -1,0 +1,31 @@
+body {
+    justify-content: center;
+    background-color: #2d3c37;
+    color: white;
+}
+
+.qcontainer {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+#boxes {
+    display: block;
+    padding: 2px;
+    font-size: large;
+    align-self: center;
+}
+
+#example-img {
+    width: 80%;
+    display: block;
+}
+
+label {
+    width: 4ch;
+}
+
+.qcontainer h1 {
+    font-size: 48px;
+}
