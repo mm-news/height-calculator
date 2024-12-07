@@ -11,5 +11,5 @@ function update_ans() {
 }
 
 function calculate_height(ang_1, ang_2, dist) {
-    return (dist * (tan(ang_1) ** 2)) / (tan(ang_2) - tan(ang_1));
+    return Math.round((dist * (tan(ang_1) ** 2)) / (tan(ang_2) - tan(ang_1)) * 100) / 100;
 }
